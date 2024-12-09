@@ -71,7 +71,7 @@ func printSortedResults(freqMap map[string]int) {
 		return sortedCommands[i].Count > sortedCommands[j].Count
 	})
 	for i, cmd := range sortedCommands {
-		if i >= 10 { // 上位10件を表示
+		if i >= 20 { // 上位10件を表示
 			break
 		}
 		fmt.Printf("%d. %s (%d times)\n", i+1, cmd.Command, cmd.Count)
